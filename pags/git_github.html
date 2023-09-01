@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Página 3 - Git e GitHub</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <li><a href="../index.html">HOME</a></li>
+    <header>
+        <h1>Git e GitHub</h1>
+    </header>
+
+    <section>
+        <h2>O que é Git e GitHub?</h2>
+        <p>O Git é um sistema de controle de versão distribuído amplamente usado para rastrear as mudanças em arquivos de código-fonte durante o desenvolvimento de software. O GitHub, por outro lado, é uma plataforma de hospedagem de código que utiliza o Git como sistema de controle de versão. O GitHub permite que você compartilhe seu código, colabore com outros desenvolvedores e gerencie projetos de forma eficiente.</p>
+    </section>
+
+    <section>
+        <h2>Configurando Chaves SSH</h2>
+        <p>Para configurar chaves SSH para autenticação segura com o GitHub, siga estas etapas:</p>
+        <ol>
+            <li>Gerar um par de chaves SSH no seu computador:</li>
+            <pre><code>ssh-keygen -t rsa -b 4096 -C "seu-email@example.com"</code></pre>
+            <li>Adicione sua chave SSH ao agente SSH:</li>
+            <pre><code>ssh-add ~/.ssh/id_rsa</code></pre>
+            <li>Copie sua chave SSH pública para a área de transferência:</li>
+            <pre><code>clip < ~/.ssh/id_rsa.pub</code></pre>
+            <li>Adicione a chave SSH pública ao GitHub nas configurações da sua conta.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Criando e Clonando um Repositório</h2>
+        <p>Para criar um novo repositório no GitHub e cloná-lo para o seu computador, siga estas etapas:</p>
+        <ol>
+            <li>Faça login na sua conta do GitHub.</li>
+            <li>Clique no botão "New" para criar um novo repositório.</li>
+            <li>Preencha as informações do repositório, como nome e descrição.</li>
+            <li>Clique em "Create Repository".</li>
+            <li>Para clonar o repositório para o seu computador, use o comando Git:</li>
+            <pre><code>git clone git@github.com:seu-usuario/seu-repositorio.git</code></pre>
+        </ol>
+    </section>
+</body>
+</html>
